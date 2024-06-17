@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-US">
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="styles/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1 id="loading">LOADING...</h1>
+    <canvas id="game"></canvas>
+
+    <p id="level1">
+      5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
+      5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
+      4 4 4 4 4 0 0 0 0 0 4 4 4 4 4 
+      4 1 4 1 4 0 0 1 0 0 4 1 4 1 4 
+      3 3 3 3 3 0 0 0 0 0 3 3 3 3 3 
+      3 3 1 3 3 3 3 3 3 3 3 3 1 3 3 
+      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 </p>
+
+    <p id="level2">
+      1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+      1 0 5 5 0 5 5 0 5 5 0 5 5 0 1 
+      1 5 5 5 5 5 5 5 5 5 5 5 5 5 1 
+      1 0 3 3 0 3 3 0 3 3 0 3 3 0 1 
+      1 3 3 3 3 3 3 3 3 3 3 3 3 3 1 
+      1 0 2 2 0 2 2 0 2 2 0 2 2 0 1 
+      1 2 2 2 2 2 2 2 2 2 2 2 2 2 1 
+      1 0 1 1 0 1 1 0 1 1 0 1 1 0 1 </p>
+
+    <pre id="tutorial">
+      当球落到判定圆弧上时，按下
+      w或上方向键，可触发特殊反弹
+
+      球打中具有元素属性的砖块时，
+      会沾染上元素力
+
+      特殊反弹火元素球，球获得贯
+      穿属性
+
+      特殊反弹冰元素球，球分裂一次
+    </pre>
+
+    <img id="playerImage" src="images/paddle.png" alt="Player Image"/>
+    <img id="ballImage" src="images/awesomeface.png" alt="Ball Image"/>
+    <img id="brickImage" src="images/block.png" alt="Brick Image"/>
+    <img id="solidBrickImage" src="images/block_solid.png" alt="Solid ball Image"/>
+    <img id="ringImage" src="images/ring.png" alt="ring Image"/>
+    <img id="backgroundImage" src="images/background_blued.jpg" alt="background Image"/>
+
+  <script src="engine/decorator.ts"></script>
+
+  <script type="module" src="engine/dataType.ts"></script>
+
+  <script type="module" src="engine/mat.ts"></script>
+
+  <script type="module" src="engine/event.ts"></script>
+  
+  <script type="module" src="engine/delegate.ts"></script>
+  
+  <script type="module" src="engine/basicGeometry.ts"></script>
+
+  <script type="module" src="physic/collision.ts"></script>
+
+  <script type="module" src="engine/actor.ts"></script>
+
+  <script type="module" src="engine/UIContext.ts"></script>
+
+  <script type="module" src="engine/object.ts"></script>
+
+  <script type="module" src="engine/messenger.ts"></script>
+  
+  <script type="module" src="engine/input.ts"></script>
+
+  <script type="module" src="engine/abstractLevel.ts"></script>
+  
+  <script type="module" src="engine/abstractGame.ts"></script>
+  
+  <script type="module" src="scripts/customActorComponent.ts"></script>
+  
+  <script type="module" src="scripts/player.ts"></script>
+
+  <script type="module" src="scripts/customActor.ts"></script>
+
+  <script type="module" src="scripts/customLevel.ts"></script>
+  
+  <script type="module" src="scripts/game.ts"></script>
+
+  <script type="module" src="physic/physicEngine.ts"></script>
+  
+  <script type="module" src="engine/engine.ts"></script>
+
+  <script type="module" src="scripts/main.ts"></script>
+  </body>
+
+</html>
