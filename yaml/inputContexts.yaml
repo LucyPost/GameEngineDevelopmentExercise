@@ -1,0 +1,20 @@
+contexts:
+  - name: default
+    actions:
+      - name: moveRight
+        keys:
+          - key: ArrowLeft
+            factor: -1
+          - key: ArrowRight
+            factor: 1
+          - key: a
+            factor: -1
+          - key: d
+            factor: 1
+      - name: releaseBall
+        keys:
+          - key: ' '
+      - name: theWorld
+        mode: whenPressed
+        keys:
+          - key: e

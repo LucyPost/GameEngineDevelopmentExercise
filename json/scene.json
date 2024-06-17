@@ -1,0 +1,137 @@
+{
+    "actors": [
+        {
+            "name": "player",
+            "class": "Player",
+            "transform": {
+                "position": {
+                    "x": 400,
+                    "y": 574.4
+                },
+                "rotation": 0,
+                "scale": {
+                    "x": 1,
+                    "y": 1
+                }
+            },
+            "components": [],
+            "properties": {
+                "inputContext": "default",
+                "speed": 0.4
+            }
+        },
+        {
+            "name": "ball",
+            "class": "Ball",
+            "transform": {
+                "position": {
+                    "x": 400,
+                    "y": 550.4
+                },
+                "rotation": 0,
+                "scale": {
+                    "x": 1,
+                    "y": 1
+                }
+            },
+            "components": [
+                {
+                    "type": "ImageComponent",
+                    "properties": {
+                        "sprite1": "ballImage",
+                        "size": {
+                            "x": 24,
+                            "y": 24
+                        }
+                    }
+                }
+            ],
+            "properties": {
+                "initialVelocity": {
+                    "x": 0,
+                    "y": -0.27
+                },
+                "radius": 12,
+                "player": "player"
+            }
+        },
+        {
+            "name": "movingBrick_1",
+            "class": "Actor",
+            "transform": {
+                "position": {
+                    "x": 400,
+                    "y": 450
+                },
+                "rotation": 0,
+                "scale": {
+                    "x": 1,
+                    "y": 1
+                }
+            },
+            "components": [
+                {
+                    "type": "ImageComponent",
+                    "properties": {
+                        "sprite1": "solidBrickImage",
+                        "size": {
+                            "x": 80,
+                            "y": 15
+                        }
+                    }
+                },
+                {
+                    "type": "MovingBrickComponent",
+                    "properties": {
+                        "velocity": {
+                            "x": -0.1,
+                            "y": 0
+                        }
+                    }
+                }
+            ],
+            "physicsBodyShape": "Rectangle",
+            "physicsBodyType": "pawn",
+            "physicsBodyCollisionPreset": "overlapAll"
+        },
+        {
+            "name": "movingBrick_2",
+            "class": "Actor",
+            "transform": {
+                "position": {
+                    "x": 600,
+                    "y": 350
+                },
+                "rotation": 0,
+                "scale": {
+                    "x": 1,
+                    "y": 1
+                }
+            },
+            "components": [
+                {
+                    "type": "ImageComponent",
+                    "properties": {
+                        "sprite1": "solidBrickImage",
+                        "size": {
+                            "x": 80,
+                            "y": 15
+                        }
+                    }
+                },
+                {
+                    "type": "MovingBrickComponent",
+                    "properties": {
+                        "velocity": {
+                            "x": 0.1,
+                            "y": 0
+                        }
+                    }
+                }
+            ],
+            "physicsBodyShape": "Rectangle",
+            "physicsBodyType": "pawn",
+            "physicsBodyCollisionPreset": "overlapAll"
+        }
+    ]
+}
