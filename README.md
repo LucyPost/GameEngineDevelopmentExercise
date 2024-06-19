@@ -8,3 +8,5 @@ scripts中是用户自定义内容
 实现了具体功能如：从json或yaml读取场景，从文件读取键位映射
 
 附带经典的breakout小游戏
+
+借助vite构建
